@@ -77,6 +77,10 @@ body {
   padding: 0;
 }
 
+img {
+  display: block;
+}
+
 /**
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
