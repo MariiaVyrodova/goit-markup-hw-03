@@ -12,6 +12,8 @@
   --grey-background-hero: rgb(47, 48, 58, 1);
   --blue-button: rgb(33, 150, 243, 1);
   --light-grey-section-color: rgb(245, 244, 250, 1);
+
+  --center-border: rgb(236, 236, 236, 1);
 }
 
 .visually-hidden {
@@ -32,6 +34,7 @@
 .container {
   margin: 0 auto;
   width: 1200px;
+  padding: 0 15px;
 }
 
 /* header section */
@@ -48,9 +51,10 @@ address {
 }
 
 header > .container {
-  height: 80px;
+  height: 79px;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid var(--center-border);
 }
 
 .logo {
@@ -62,8 +66,6 @@ header > .container {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-  margin-left: 15px;
 }
 
 .web {
@@ -129,6 +131,11 @@ header > .container {
   background-color: var(--grey-background-hero);
 }
 
+.hero-section > .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero-title {
   color: var(--white-text);
   font-family: 'Roboto', sans-serif;
@@ -139,24 +146,38 @@ header > .container {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  padding-bottom: 30px;
+}
+
+.order-btn-container {
+  display: flex;
+  justify-content: center;
 }
 
 .order-btn {
+  width: 200px;
+  height: 50px;
+
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: var(--blue-button);
+
   color: var(--white-text);
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 }
+
+/* .order-btn:hover,
+.order-btn:focus,
+.order-btn:active {
+  color: var(--white-text);
+} */
 
 /* features section */
 
@@ -164,24 +185,45 @@ header > .container {
   background-color: var(--white-backgroung-header);
 }
 
+.features-section > .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.feature-list {
+  display: flex;
+}
+
+.feature-list > li {
+  margin-right: 30px;
+  width: calc(100% / 4);
+}
+
+.feature-list > li:last-child {
+  margin-right: 0px;
+}
+
 .feature-title {
   color: var(--black-text);
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
+  /* font-style: normal; */
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 
 .feature-description {
   color: var(--grey-text);
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
+  /* font-style: normal; */
+  /* text-align: left; */
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 190%;
   letter-spacing: 0.03em;
 }
 
