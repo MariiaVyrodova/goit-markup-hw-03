@@ -21,7 +21,6 @@
   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-}
 
 .visually-hidden {
   position: absolute;
@@ -378,27 +377,24 @@ header > .container {
 
 /* page PORTFOLIO */
 
-.portfolio-main {
+.portfolio-main-section {
   padding: 94px 0;
 }
 
 .sort-btn-container {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
-.sort-btn-container {
-  display: flex;
-}
 
-/* .sort-btn-list {
+.sort-btn-list {
   display: flex;
   justify-content: center;
-} */
+
+}
 
 .sort-btn {
-  width: 145px;
-  height: 38px;
-
+  padding: 6px 22px;
+  
   border: none;
   border-radius: 4px;
   background-color: var(--light-grey-section-color);
@@ -412,21 +408,21 @@ header > .container {
   letter-spacing: 0.03em;
 }
 
+.sort-btn-list > li {
+margin-left: 8px;
+}
+
+.sort-btn-list >li:first-child {
+  margin-left: 0px;
+}
+
 .sort-btn:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: var(--blue-button);
   color: var(--white-text);
-  /* border: none;
-  border-radius: 4px;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em; */
 }
+
 
 .list-title-container > h2 {
   color: var(--black-text);
@@ -451,17 +447,9 @@ header > .container {
 }
 
 /* DELETE THIS */
-section {
+/* section {
   outline: 2px solid red;
-}
-
-.projects {
-  outline: 2px solid red;
-}
-
-.container {
-  outline: 2px solid red;
-}
+} */
 
 .projects {
   display: flex;
