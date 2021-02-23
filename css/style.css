@@ -57,14 +57,15 @@ nav,
 .navigation-list,
 address {
   display: flex;
-}
+} 
 
 header {
   border-bottom: 1px solid var(--center-border);
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 header > .container {
-  height: 79px;
   justify-content: space-between;
   align-items: center;
   }
@@ -141,11 +142,12 @@ header > .container {
 
 .hero-section {
   background-color: var(--grey-background-hero);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-section > .container {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  
 }
 
 .hero-title {
@@ -195,10 +197,7 @@ header > .container {
 
 .features-section {
   background-color: var(--white-backgroung-header);
-}
-
-.features-section > .container {
-  padding-top: 94px;
+    padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -218,7 +217,6 @@ header > .container {
 .feature-title {
   color: var(--black-text);
   font-family: 'Roboto', sans-serif;
-  /* font-style: normal; */
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -239,7 +237,9 @@ header > .container {
 
 /* work areas */
 
-.work-areas > .container {
+
+
+.work-areas {
   padding-bottom: 94px;
 }
 
@@ -265,10 +265,7 @@ header > .container {
 
 .team-section {
   background-color: var(--light-grey-section-color);
-}
-
-.team-section > .container {
-  padding-top: 94px;
+    padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -318,14 +315,10 @@ header > .container {
 
 .footer-section {
   background-color: var(--grey-background-hero);
-}
-
-
-.footer-section > .container {
-  
-  padding-top: 60px;
+    padding-top: 60px;
   padding-bottom: 60px;
 }
+
 
 .logo-footer {
   font-family: 'Raleway', sans-serif;
